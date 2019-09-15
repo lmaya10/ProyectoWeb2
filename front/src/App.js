@@ -31,6 +31,9 @@ class Events extends React.Component {
           { this.renderEvents() }
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
       <div id="form2">
         <Form></Form>
       </div>
