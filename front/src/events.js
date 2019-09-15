@@ -7,7 +7,7 @@ class Event extends React.Component {
     super(props);
 
     this.state = {
-      cupos: this.props.cupos
+      cupos: this.props.e.cupos
     };
   }
 
@@ -21,8 +21,8 @@ class Event extends React.Component {
             <p class="card-text">Lugar: {this.props.e.bar}</p>
             <p class="card-text">Fecha: {this.props.e.date}</p>
             <p class="card-text">Hora: {this.props.e.initialTime}</p>
-            <p class="card-text">Precio: {this.props.e.price}</p>
-            <p class="card-text">Comentarios{this.props.e.additionals}</p>
+            <p class="card-text">Precio: ${this.props.e.price}</p>
+            <p class="card-text">Comentarios: {this.props.e.additionals}</p>
             <label htmlFor="btnVote">
               <button 
                 onClick={ () => {
