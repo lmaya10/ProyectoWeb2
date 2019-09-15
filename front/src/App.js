@@ -25,7 +25,7 @@ class Events extends React.Component {
 
   render() {
     return ( <div>
-       <div>
+      <div>
         <h2>Proximos Eventos</h2>
         <div className="row">
           { this.renderEvents() }

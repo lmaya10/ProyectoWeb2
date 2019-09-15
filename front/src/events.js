@@ -23,7 +23,7 @@ class Event extends React.Component {
             <p class="card-text">Hora: {this.props.e.initialTime}</p>
             <p class="card-text">Precio: ${this.props.e.price}</p>
             <p class="card-text">Comentarios: {this.props.e.additionals}</p>
-            <span>Cupos: <span id="cupos">{this.state.cupos}</span></span>
+            <p class="card-text"><span>Cupos: <span id="cupos">{this.state.cupos}</span></span></p>
             <label htmlFor="btnVote">
               <button 
                 onClick={ () => {
