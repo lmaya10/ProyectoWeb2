@@ -1,6 +1,6 @@
 import React from "react";
 import Evento from "./events.js";
-import Form from "./form.js"
+import Form from "./form.js";
 
 class Events extends React.Component {
   constructor(props) {
@@ -31,7 +31,7 @@ class Events extends React.Component {
           { this.renderEvents() }
         </div>
       </div>
-      <div className="form2">
+      <div id="form2">
         <Form></Form>
       </div>
     </div>
