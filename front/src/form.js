@@ -2,7 +2,7 @@ import React from 'react';
 import './form.css';
 import axios from 'axios';
 
-const API_PATH = 'http://localhost:3001/ProyectoWeb2/api/contact/index.php';
+const API_PATH = 'https://proyectoweb2-cafe.herokuapp.com/api/contact/index.php';
 
 class Form extends React.Component {
 
