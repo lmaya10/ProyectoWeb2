@@ -36,5 +36,5 @@
     "gh-pages": "^2.1.1"
   },
   "proxy": "http://localhost:3001",
-  "homepage": "https://fescobar15.github.io/ProyectoWeb2/"
+  "homepage": "proyectoweb2-cafe.herokuapp.com"
 }
