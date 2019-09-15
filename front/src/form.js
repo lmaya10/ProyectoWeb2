@@ -1,5 +1,8 @@
 import React from 'react';
 import './form.css';
+import axios from 'axios';
+
+const API_PATH = 'http://localhost:3001/ProyectoWeb2/api/contact/index.php';
 
 class Form extends React.Component {
 
@@ -15,10 +18,21 @@ class Form extends React.Component {
     }
   }
 
-  handleFormSubmit( event ) {
-    event.preventDefault();
-    console.log(this.state);
-  }
+  handleFormSubmit = e => {
+    e.preventDefault();
+    axios({
+      method: 'post',
+      url: `${API_PATH}`,
+      headers: { 'content-type': 'application/json' },
+      data: this.state
+    })
+      .then(result => {
+        this.setState({
+          mailSent: result.data.sent
+        })
+      })
+      .catch(error => this.setState({ error: error.message }));
+  };
 
   render() {
     return (
@@ -47,6 +61,11 @@ class Form extends React.Component {
               value={this.state.message}></textarea>
 
             <input type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit" />
+            <div>
+              {this.state.mailSent &&
+                <div>Gracias por comunicarte con nosotros.</div>
+              }
+            </div>
           </form >
         </div>
       </div>
