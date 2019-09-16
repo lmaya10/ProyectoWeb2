@@ -1,3 +1,5 @@
+En general me parece que esta bien la pagina, tal vez pudieron agregarle mas cosas, como filtros, o poder ingresar comentarios pero cumple la funcionalidad principal
+
 # CapitalNights
 http://proyectoweb2-cafe.herokuapp.com/#root
 
